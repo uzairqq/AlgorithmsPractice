@@ -1,4 +1,4 @@
-﻿using AlgorithmsPractice._01_Basics_BigO.Problem001_TwoSum;
+﻿using AlgorithmsPractice._01_Basics_BigO.Problem002___ContainsDuplicate;
 
 namespace AlgorithmsPractice
 {
@@ -6,10 +6,13 @@ namespace AlgorithmsPractice
     {
         static void Main(string[] args)
         {
-            TwoSum.TwoSumCheck([2, 7, 11, 15], 9);   // expect [0,1]
-            TwoSum.TwoSumCheck([3, 2, 4], 6);        // expect [1,2]
-            TwoSum.TwoSumCheck([3, 3], 6);           // expect [0,1]
-            TwoSum.TwoSumCheck([1, 2, 3], 6);        // expect no pair
+            Console.WriteLine(ContainsDuplicate.CheckDuplicates(new[] { 2, 7, 11, 15 }));   // false
+            Console.WriteLine(ContainsDuplicate.CheckDuplicates(new[] { 1, 2, 3, 4 }));     // false
+            Console.WriteLine(ContainsDuplicate.CheckDuplicates(new[] { 5, 5, 5 }));        // true
+            Console.WriteLine(ContainsDuplicate.CheckDuplicates(Array.Empty<int>()));       // false
+
+            Console.WriteLine("All tests executed.");
+            Console.ReadLine();
         }
     }
 }
